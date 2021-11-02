@@ -5,8 +5,10 @@ const Useref = () => {
   const handleRef = () => {
     console.log("use ref func work");
     console.log(inputRef);
-    inputRef.current.value = "first";
+    console.log(inputRef.current.value);
     inputRef.current.focus();
+    inputRef.current.style.color = "red";
+    // inputRef.current.style.display = "none";
   };
   return (
     <>
