@@ -6,10 +6,11 @@ const Useref = () => {
     console.log("use ref func work");
     console.log(inputRef);
     inputRef.current.value = "first";
+    inputRef.current.focus();
   };
   return (
     <>
-      <h2>Welcome to learn useRef hooks</h2>
+      <h2 ref={inputRef}>Welcome to learn useRef hooks</h2>
       <input type="text" ref={inputRef} />
       <br />
       <br />
